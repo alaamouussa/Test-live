@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Auto Scroll</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <h1>Auto Scroll</h1>
+
+  <label for="speed">Speed (pixels per step)</label>
+  <input id="speed" type="number" min="1" max="5000" step="1" value="50">
+
+  <div class="row">
+    <button id="start" class="primary">Start</button>
+    <button id="stop">Stop</button>
+  </div>
+
+  <p id="status" class="status" role="status">Stopped</p>
+
+  <hr>
+
+  <button id="extract" class="wide">Extract HTML</button>
+  <p class="hint">Tip: press Esc on the page to stop scrolling.</p>
+
+  <p id="page" class="hint"></p>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Scroll & HTML Extractor",
+  "version": "1.0.0",
+  "description": "Auto-scroll any page at a speed you choose, stop anytime, and save the page as an HTML file.",
+  "action": {
+    "default_title": "Open Auto Scroll panel"
+  },
+  "side_panel": {
+    "default_path": "sidepanel/sidepanel.html"
+  },
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": ["sidePanel", "scripting", "storage", "downloads", "tabs"],
+  "host_permissions": ["<all_urls>"]
+}
